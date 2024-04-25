@@ -2,6 +2,15 @@
 
 This project implements the Neural Common Neighbour with Completion (NCNC) algorithm for link prediction using GraphSage. The NCNC algorithm is based on the research paper titled [Neural Common Neighbour with Completion for Link Prediction], and it extends the GraphSage framework for more accurate link prediction in graph data.
 
+
+1. **Effective Link Prediction**: The proposed method, which combines the Neural Common Neighbor (NCN) and GraphSAGE models, demonstrates superior performance in predicting missing links across various benchmark datasets, including Cora, Citeseer, and PubMed. The Hits@100 scores range from 68.12% to 84.41%, outperforming traditional heuristic methods and other state-of-the-art GNN-based approaches.
+
+2. **Adaptability to Diverse Datasets**: The model exhibits robust performance across datasets with varying characteristics, such as size, node features, and citation patterns. This adaptability highlights the versatility of the proposed approach in handling complex real-world graph structures.
+
+3. **Scalability and Efficiency**: The combination of GraphSAGE and NCN (GraphSAGE + NCN) has been evaluated for scalability on the large-scale ogbl-collab dataset. The results demonstrate efficient inference times and effective GPU memory management, making the model suitable for practical deployment in real-world applications.
+
+4. **Comprehensive Evaluation**: The project provides a thorough evaluation of various link prediction models, including traditional heuristics and state-of-the-art GNN-based approaches. The detailed analysis of performance metrics, such as Hits@20, Hits@50, and Hits@100, offers valuable insights for researchers and practitioners in the field of graph representation learning and link prediction.
+
 ## Files
 
 - `NeighbourOverlap.py`: Python script implementing the neural common neighbour with completion for link prediction.
